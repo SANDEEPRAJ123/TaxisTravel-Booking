@@ -1,0 +1,764 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Sikkim Darjeeling Taxis — Taxi & Tour Services</title>
+    <meta name="description"
+        content="Sikkim Darjeeling Taxis — Reliable, affordable taxi and tour service across Sikkim, Darjeeling, Kalimpong, Bhutan and Nepal. Book online, call, or WhatsApp us." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        :root {
+            --accent: #0ea5a4;
+            --dark: #0f172a;
+            --muted: #64748b;
+            --card: #ffffff;
+            --radius: 12px;
+            font-family: 'Inter', system-ui, Arial, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            margin: 0;
+            background: #f8fafc;
+            color: var(--dark);
+            -webkit-font-smoothing: antialiased
+        }
+
+        header {
+    background: linear-gradient(90deg, rgba(14, 165, 164, 0.12), rgba(59, 130, 246, 0.06));
+    backdrop-filter: blur(4px);
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+}
+
+.brand {
+    display: flex;
+    gap: 14px;
+    align-items: center; /* keeps logo + text vertically centered */
+}
+
+.logo {
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    object-fit: cover;    /* ensures image fills box */
+    display: block;
+}
+
+/* remove old gradient text background since logo is now image */
+.brand-name {
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.small {
+    font-size: 13px;
+    color: #555;
+}
+
+nav a {
+    margin-left: 18px;
+    color: var(--dark);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    gap: 28px;
+    align-items: center;
+    padding: 28px 0;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    .logo {
+        width: 45px;
+        height: 45px;
+        border-radius: 10px;
+    }
+    .brand-name {
+        font-size: 16px;
+    }
+    .small {
+        font-size: 12px;
+    }
+    nav a {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+}
+
+
+        .eyebrow {
+            color: var(--muted);
+            font-weight: 600
+        }
+
+        h1 {
+            font-size: 28px;
+            margin: 8px 0 12px
+        }
+
+        p.lead {
+            color: var(--muted);
+            line-height: 1.5
+        }
+
+        .cta-row {
+            display: flex;
+            gap: 12px;
+            margin-top: 16px;
+            flex-wrap: wrap
+        }
+
+        .btn {
+            padding: 12px 18px;
+            border-radius: 10px;
+            border: 0;
+            cursor: pointer;
+            font-weight: 700;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center
+        }
+
+        .btn-accent {
+            background: var(--accent);
+            color: white
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--accent);
+            color: var(--accent)
+        }
+
+        .btn-whatsapp {
+            background: #25D366;
+            color: #fff
+        }
+
+        .card {
+            background: var(--card);
+            border-radius: var(--radius);
+            box-shadow: 0 8px 28px rgba(15, 23, 42, 0.06);
+            padding: 18px
+        }
+
+        label {
+            display: block;
+            font-size: 13px;
+            color: var(--muted);
+            margin-top: 12px
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #e6eef6;
+            margin-top: 6px;
+            font-size: 14px
+        }
+
+        .small {
+            font-size: 13px;
+            color: var(--muted)
+        }
+
+        .flex {
+            display: flex;
+            gap: 12px
+        }
+
+        section {
+            padding: 22px 0
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px
+        }
+
+        .service {
+            background: linear-gradient(180deg, #ffffff, #f8fafc);
+            padding: 18px;
+            border-radius: 12px
+        }
+        .contact-location {
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    gap: 18px;
+    align-items: start;
+}
+
+/* Mobile: stack into two rows */
+@media (max-width: 576px) {
+    .contact-location {
+        grid-template-columns: 1fr; /* one column only */
+    }
+}
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 8px
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 8px
+        }
+
+        footer {
+            padding: 24px 0;
+            border-top: 1px solid #eef2f7;
+            margin-top: 18px
+        }
+
+        @media (max-width:980px) {
+            .hero {
+                grid-template-columns: 1fr
+            }
+
+            .gallery {
+                grid-template-columns: repeat(2, 1fr)
+            }
+
+            .grid-3 {
+                grid-template-columns: repeat(2, 1fr)
+            }
+        }
+
+        @media (max-width:520px) {
+            nav {
+                display: none
+            }
+
+            .gallery img {
+                height: 90px
+            }
+
+            .grid-3 {
+                grid-template-columns: 1fr
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .packages h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.packages h2 span {
+    color: #f4b400;
+}
+
+.package-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    /* exactly 400px each */
+    gap: 20px;
+    /* space between cards */
+    justify-content: center;
+    /* center the grid */
+    margin: 0 auto 50px;
+}
+
+.card {
+    position: relative;
+    background: #fdfdfd;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 581px) {
+    .card {
+        margin-left: 15px;
+        margin-right: 15px;
+        padding: 20px;
+        /* optional: keeps inner spacing too */
+    }
+}
+
+.price-tag {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #e74c3c;
+    color: #fff;
+    padding: 8px 12px;
+    font-weight: bold;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    font-size: 16px;
+    margin: 15px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #555;
+    margin: 0 15px;
+}
+
+.card .days {
+    display: block;
+    color: #f4b400;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.view-detail {
+    background: #f4b400;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.view-detail:hover {
+    background: #d99a00;
+}
+
+/* Tablets (≤ 992px): 2 cards per row */
+@media (max-width: 992px) {
+    .package-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile (≤ 576px): 1 card per row */
+@media (max-width: 576px) {
+    .package-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* NEW: card-bottom flex row */
+.card-bottom {
+    display: flex;          /* horizontal layout */
+    align-items: center;    /* vertical alignment */
+    gap: 15px;              /* space between icons and button */
+    justify-content: center;/* center everything in one row */
+    margin-top: 15px;
+}
+
+.tour-icons {
+    display: flex;
+    gap: 10px;              /* space between icons */
+}
+
+.tour-icons i {
+    font-size: 18px;
+    color: #caa66b;         /* adjust to your theme color */
+}
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="topbar">
+                <div class="brand">
+                    <img class="logo" src="logo.png" alt="Sikkim Darjeeling Taxis Logo">
+                    <div>
+                        <div class="brand-name">Sikkim Darjeeling Taxis</div>
+                        <div class="small">Reliable taxi service across Sikkim & Darjeeling</div>
+                    </div>
+                </div>
+                <nav>
+                    <a href="#services">Services</a>
+                    <a href="#booking">Book Now</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#contact">Contact</a>
+                    <a href="index.html">Package</a>
+                </nav>
+            </div>
+
+            <div class="hero">
+                <div>
+                    <div class="eyebrow">Trusted Local Drivers • 24/7 Support</div>
+                    <h1>Explore the Himalayas with safe, affordable taxis</h1>
+                    <p class="lead">Sikkim Darjeeling Taxis provides comfortable, well-maintained vehicles and
+                        experienced drivers for local rides, long-distance transfers, and customized tour packages
+                        across Sikkim, Darjeeling, Kalimpong, Bhutan and Nepal.</p>
+
+                    <div class="cta-row">
+                        <a href="#booking" class="btn btn-accent">Book a Taxi</a>
+                        <a href="tel:+919832564013" class="btn btn-outline">Call: 9832564013</a>
+                        <a href="https://wa.me/919832564013" target="_blank" class="btn btn-whatsapp">WhatsApp Us</a>
+                    </div>
+
+                    <div style="margin-top:18px;font-size:13px;color:var(--muted)">Available:
+                        <strong>9832564013</strong> • <strong>9002069916</strong> • <strong>03592295516</strong>
+                    </div>
+
+                    <section id="services">
+                        <h3 style="margin-top:18px">Our Services</h3>
+                        <div class="grid-3">
+                            <div class="service">
+                                <strong>Airport / Station Transfers</strong>
+                                <div class="small">Prompt pick-up and drop-off to Bagdogra, NJP and nearby stations.
+                                </div>
+                            </div>
+                            <div class="service">
+                                <strong>Full-Day Tours</strong>
+                                <div class="small">Custom sightseeing around Gangtok, Darjeeling, Kalimpong and local
+                                    attractions.</div>
+                            </div>
+                            <div class="service">
+                                <strong>Outstation & Multi-day</strong>
+                                <div class="small">One-way and round-trip transfers to Bhutan, Nepal and neighboring
+                                    states.</div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <aside class="card" id="booking">
+                    <h3 style="margin:0 0 6px">Quick Booking</h3>
+                    <div class="small">Fill details and we'll confirm via phone / email</div>
+                    <form id="bookingForm" style="margin-top:12px">
+                        <label for="name">Full name</label>
+                        <input id="name" name="name" required placeholder="Your name" />
+                        <label for="phone">Phone number</label>
+                        <input id="phone" name="phone" required placeholder="Mobile (e.g. +91 98xxxx)" />
+                        <label for="pickup">Pickup location</label>
+                        <input id="pickup" name="pickup" required placeholder="Eg: Upper Sichey, Gangtok" />
+                        <label for="drop">Drop-off location</label>
+                        <input id="drop" name="drop" required placeholder="Eg: Darjeeling, Kalimpong" />
+                        <div class="flex">
+                            <div style="flex:1">
+                                <label for="date">Date</label>
+                                <input id="date" name="date" type="date" required />
+                            </div>
+                            <div style="width:120px">
+                                <label for="passengers">Pax</label>
+                                <select id="passengers" name="passengers">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5+</option>
+                                </select>
+                            </div>
+                        </div>
+                        <label for="notes">Notes (optional)</label>
+                        <textarea id="notes" name="notes" rows="3"
+                            placeholder="Any special requests or luggage info"></textarea>
+                        <div style="display:flex;gap:8px;margin-top:12px;flex-wrap:wrap">
+                            <button type="submit" class="btn btn-accent">Request Booking</button>
+                            <a class="btn btn-outline" href="mailto:sikkimtaxis@gmail.com">Email Us</a>
+                            <a href="https://wa.me/919832564013" target="_blank" class="btn btn-whatsapp">WhatsApp
+                                Us</a>
+                        </div>
+                        <div id="bookingMessage" style="margin-top:12px;font-size:13px;color:var(--muted)"></div>
+                    </form>
+                </aside>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="gallery">
+            <h3>Packages</h3>
+            <!-- <div class="gallery">
+                <img alt="Gangtok road"
+                    src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&s=1" />
+                <img alt="Darjeeling"
+                    src="https://images.unsplash.com/photo-1501804905252-7f5e3b9d3a9a?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&s=2" />
+                <img alt="Car interior"
+                    src="https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&s=3" />
+                <img alt="Mountain view"
+                    src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&s=4" />
+            </div> -->
+
+            <div class="package-cards">
+                <!-- Card 1 -->
+                <div class="card">
+                    <div class="price-tag">18000</div>
+                    <img src="https://www.indianholiday.com/wordpress/wp-content/uploads/2017/10/sikkim-nightlife.png"
+                        alt="Gangtok Tour">
+                    <h3>3NIGHT 4 DAYS GANGTOK AND LACHEN FAMILY TOUR</h3>
+                    <p>(Gangtok 2N – Lachen 1N)</p>
+                    <span class="days">03 NIGHTS/04 DAYS</span>
+                    <!-- Single container for icons + button -->
+                    <div class="card-bottom">
+                        <div class="tour-icons">
+                            <i class="fa-solid fa-car"></i>
+                            <i class="fa-solid fa-hotel"></i>
+                            <i class="fa-solid fa-utensils"></i>
+                            <i class="fa-solid fa-camera"></i>
+                        </div>
+                        <button class="view-detail">VIEW DETAIL</button>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card">
+                    <div class="price-tag">17000</div>
+                    <img src="https://img.freepik.com/free-photo/young-woman-hiker-taking-photo-with-smartphone-mountains-peak-winter_335224-427.jpg?t=st=1756476913~exp=1756480513~hmac=86dd62a15c8b13e2fb2866a9bc061b628becab51b105b884eb6447657b07cc43&w=2000"
+                        alt="Gangtok Darjeeling Tour">
+                    <h3>GANGTOK DARJEELING HONEYMOON <br>TOUR 2025</h3>
+                    <p>(Gangtok 3N – Darjeeling 2N)</p>
+                    <span class="days">05 NIGHTS/06 DAYS</span>
+
+                    <!-- Single container for icons + button -->
+                    <div class="card-bottom">
+                        <div class="tour-icons">
+                            <i class="fa-solid fa-car"></i>
+                            <i class="fa-solid fa-hotel"></i>
+                            <i class="fa-solid fa-utensils"></i>
+                            <i class="fa-solid fa-camera"></i>
+                        </div>
+                        <button class="view-detail">VIEW DETAIL</button>
+                    </div>
+                </div>
+
+
+
+                <!-- Card 3 -->
+                <div class="card">
+                    <div class="price-tag">17500</div>
+                    <img src="https://img.freepik.com/free-photo/ulsan-bawi-rock-seoraksan-mountains-winter-south-korea_335224-287.jpg?t=st=1756477013~exp=1756480613~hmac=fd937e8ac2cefebec7d6034230682e87f75d9ce88a768507829b2e71c12400dc&w=2000"
+                        alt="Majestic Gangtok Tour">
+                    <h3>MAJESTIC GANGTOK TOUR <br>PACKAGE</h3>
+                    <p>(Gangtok 3N)</p>
+                    <span class="days">03 NIGHTS/04 DAYS</span>
+                    <!-- Single container for icons + button -->
+                    <div class="card-bottom">
+                        <div class="tour-icons">
+                            <i class="fa-solid fa-car"></i>
+                            <i class="fa-solid fa-hotel"></i>
+                            <i class="fa-solid fa-utensils"></i>
+                            <i class="fa-solid fa-camera"></i>
+                        </div>
+                        <button class="view-detail">VIEW DETAIL</button>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="card">
+                    <div class="price-tag">16000</div>
+                    <img src="https://img.freepik.com/premium-photo/village-mountains-with-mountain-background_709698-501.jpg?w=2000"
+                        alt="Darjeeling Tour">
+                    <h3>DARJEELING EXPLORER TOUR</h3>
+                    <p>(Darjeeling 3N)</p>
+                    <span class="days">03 NIGHTS/04 DAYS</span>
+                    <!-- Single container for icons + button -->
+                    <div class="card-bottom">
+                        <div class="tour-icons">
+                            <i class="fa-solid fa-car"></i>
+                            <i class="fa-solid fa-hotel"></i>
+                            <i class="fa-solid fa-utensils"></i>
+                            <i class="fa-solid fa-camera"></i>
+                        </div>
+                        <button class="view-detail">VIEW DETAIL</button>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="card">
+                    <div class="price-tag">20000</div>
+                    <img src="https://img.freepik.com/free-photo/beautiful-girl-making-drip-coffee-sunrise-viewpoint-pha-hi-village-chiang-rai-province-thailand_335224-1165.jpg?t=st=1756478121~exp=1756481721~hmac=a6bf00c18820dcc52d90b5acb37cc43a6b4c7a56c2bdf40ca6d6b1fe0e5b94a2&w=2000"
+                        alt="North Sikkim Tour">
+                    <h3>Gangtok Darjeeling Tour Package</h3>
+                    <p>(Lachen 2N – Lachung 2N)</p>
+                    <span class="days">04 NIGHTS/05 DAYS</span>
+                    <!-- Single container for icons + button -->
+                    <div class="card-bottom">
+                        <div class="tour-icons">
+                            <i class="fa-solid fa-car"></i>
+                            <i class="fa-solid fa-hotel"></i>
+                            <i class="fa-solid fa-utensils"></i>
+                            <i class="fa-solid fa-camera"></i>
+                        </div>
+                        <button class="view-detail">VIEW DETAIL</button>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="card">
+                    <div class="price-tag">18500</div>
+                    <img src="https://img.freepik.com/premium-photo/house-with-mountain-background_709698-625.jpg?w=2000"
+                        alt="Pelling Tour">
+                    <h3>Gangtok Pelling Darjeeling Honeymoon</h3>
+                    <p>(Pelling 3N)</p>
+                    <span class="days">03 NIGHTS/04 DAYS</span>
+                    <!-- Single container for icons + button -->
+                    <div class="card-bottom">
+                        <div class="tour-icons">
+                            <i class="fa-solid fa-car"></i>
+                            <i class="fa-solid fa-hotel"></i>
+                            <i class="fa-solid fa-utensils"></i>
+                            <i class="fa-solid fa-camera"></i>
+                        </div>
+                        <button class="view-detail">VIEW DETAIL</button>
+                    </div>
+                </div>
+
+        </section>
+
+        <section>
+            <h3>Why choose us?</h3>
+            <div style="display:flex;gap:16px;flex-wrap:wrap">
+                <div style="flex:1;min-width:220px" class="card">
+                    <strong>Experienced drivers</strong>
+                    <div class="small">Local drivers with years of driving experience on mountain roads.</div>
+                </div>
+                <div style="flex:1;min-width:220px" class="card">
+                    <strong>Well maintained cars</strong>
+                    <div class="small">Clean, insured and regularly serviced vehicles for comfortable journeys.</div>
+                </div>
+                <div style="flex:1;min-width:220px" class="card">
+                    <strong>Transparent pricing</strong>
+                    <div class="small">No hidden charges — clear quotes for transfers and packages.</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3>Testimonials</h3>
+            <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:12px">
+                <div class="card">“Very friendly drivers and safe driving. Took us from Bagdogra to Gangtok — highly
+                    recommended!”<div class="small" style="margin-top:8px">— Rina K.</div>
+                </div>
+                <div class="card">“Flexible with our itinerary and great value for money. The car was clean and
+                    comfortable.”<div class="small" style="margin-top:8px">— Manoj S.</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h3>Contact & Location</h3>
+            <div class="contact-location">
+                <div class="card">
+                    <p><strong>Address</strong><br>Upper Sichey, Gangtok East, Sikkim</p>
+                    <p><strong>Phone</strong><br>
+                        <a href="tel:+919832564013">9832564013</a> • 
+                        <a href="tel:+919002069916">9002069916</a> • 
+                        <a href="tel:+913592295516">03592295516</a>
+                    </p>
+                    <p><strong>Email</strong><br>
+                        <a href="mailto:sikkimtaxis@gmail.com">sikkimtaxis@gmail.com</a>
+                    </p>
+                    <p class="small">
+                        We operate 24/7 for airport transfers, local tours and long-distance travel. 
+                        For urgent bookings call the numbers above.
+                    </p>
+                </div>
+        
+                <div class="card">
+                    <strong>Map</strong>
+                    <div style="margin-top:8px">
+                        <iframe width="100%" height="260" frameborder="0" style="border:0;border-radius:8px"
+                            src="https://www.google.com/maps?q=Upper+Sichey,+Gangtok+East+Sikkim&output=embed"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <div class="container"
+            style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
+            <div>
+                <strong>Sikkim Darjeeling Taxis</strong><br>
+                Upper Sichey, Gangtok East, Sikkim • <a href="mailto:sikkimtaxis@gmail.com">sikkimtaxis@gmail.com</a>
+            </div>
+            <div style="text-align:right" class="small">Call: <a href="tel:+919832564013">9832564013</a> • <a
+                    href="tel:+919002069916">9002069916</a></div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple booking handler that opens user's mail client with booking info (no backend required)
+        document.getElementById('bookingForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const pickup = document.getElementById('pickup').value.trim();
+            const drop = document.getElementById('drop').value.trim();
+            const date = document.getElementById('date').value;
+            const pax = document.getElementById('passengers').value;
+            const notes = document.getElementById('notes').value.trim();
+
+            if (!name || !phone || !pickup || !drop || !date) {
+                document.getElementById('bookingMessage').textContent = 'Please fill all required fields.';
+                return;
+            }
+
+            const subject = encodeURIComponent('Booking Request — Sikkim Darjeeling Taxis');
+            const body = encodeURIComponent(
+                `Name: ${name}\nPhone: ${phone}\nPickup: ${pickup}\nDrop: ${drop}\nDate: ${date}\nPassengers: ${pax}\nNotes: ${notes}`
+            );
+
+            // Open mail client with prefilled message so site owner receives booking by email
+            window.location.href = `mailto:sikkimtaxis@gmail.com?subject=${subject}&body=${body}`;
+            document.getElementById('bookingMessage').textContent = 'Opening your mail client to send the booking. If nothing opens, please email sikkimtaxis@gmail.com or call 9832564013.';
+        });
+    </script>
+</body>
+
+</html>

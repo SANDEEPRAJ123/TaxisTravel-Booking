@@ -1,0 +1,606 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sikkim Darjeeling Taxi — Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container nav">
+            <div class="brand">
+                <img src="assets/logo.png" alt="logo">
+                <div>
+                    <div style="font-weight:700">Sikkim Darjeeling Taxi</div>
+                    <div style="font-size:12px;color:var(--muted)">Reliable intercity & local taxis</div>
+                </div>
+            </div>
+            <nav style="display:flex;align-items:center;gap:16px">
+                <div class="nav-links">
+                    <a href="Home.html">Home</a>
+                    <a href="#services">Services</a>
+                    <a href="About-us.html">About us</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <button class="cta">Book Now</button>
+                <button class="burger" id="burger" aria-label="menu">☰</button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="container hero-inner">
+                <div>
+                    <p>WELCOME</p>
+                    <h1>SIKKIM DARJEELING TAXI</h1>
+                    <h2>BEST TAXI SERVICE IN SIKKIM AND DARJEELING</h2>
+                </div>
+            </div>
+
+            <!-- Form inside hero -->
+            <div class="hero-form">
+                <form class="form-card">
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="tel" placeholder="Phone Number" pattern="[0-9]{10}" maxlength="10" required>
+                    <input type="date" required>
+                    <button type="submit">SUBMIT</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <!-- Mission Section -->
+    <section class="mission">
+        <h2>OUR MISSION IS <span>CUSTOMERS</span> SATISFACTION</h2>
+        <div class="small-car">
+            <img src="assets/car-pn.svg" alt="Car">
+        </div>
+        <p>SikkimDarjeelingTaxi.com provides the best Cab Service in Sikkim / Darjeeling and other North Eastern Region
+            with 100% Sanitized Cabs.</p>
+
+        <div class="stats">
+            <div class="stat-box">
+                <!-- People Icon -->
+                <img class="icon" src="assets/employe-card.png" alt="Dedicated Employees">
+                <h3>10+</h3>
+                <p>Dedicated Employees</p>
+            </div>
+
+            <div class="stat-box">
+                <!-- Thumbs Up Icon -->
+                <img class="icon" src="assets/good-feedback.png" alt="Satisfied Customers">
+                <h3>30+</h3>
+                <p>Satisfied Customers</p>
+            </div>
+
+            <div class="stat-box">
+                <!-- Taxi/Car Icon -->
+                <img class="icon" src="assets/car.png" alt="Sanitized Vehicles">
+                <h3>10+</h3>
+                <p>100% Sanitized Vehicles</p>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- Packages Section -->
+    <section class="packages">
+        <h2>OUR LATEST AND <span>BEST PACKAGES</span></h2>
+
+        <div class="package-cards">
+            <!-- Card 1 -->
+            <div class="card">
+                <div class="price-tag">18000</div>
+                <img src="https://www.indianholiday.com/wordpress/wp-content/uploads/2017/10/sikkim-nightlife.png"
+                    alt="Gangtok Tour">
+                <h3>3NIGHT 4 DAYS GANGTOK AND LACHEN FAMILY TOUR</h3>
+                <p>(Gangtok 2N – Lachen 1N)</p>
+                <span class="days">03 NIGHTS/04 DAYS</span>
+                <!-- Single container for icons + button -->
+                <div class="card-bottom">
+                    <div class="tour-icons">
+                        <i class="fa-solid fa-car"></i>
+                        <i class="fa-solid fa-hotel"></i>
+                        <i class="fa-solid fa-utensils"></i>
+                        <i class="fa-solid fa-camera"></i>
+                    </div>
+                    <button class="view-detail">VIEW DETAIL</button>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <div class="price-tag">17000</div>
+                <img src="https://img.freepik.com/free-photo/young-woman-hiker-taking-photo-with-smartphone-mountains-peak-winter_335224-427.jpg?t=st=1756476913~exp=1756480513~hmac=86dd62a15c8b13e2fb2866a9bc061b628becab51b105b884eb6447657b07cc43&w=2000"
+                    alt="Gangtok Darjeeling Tour">
+                <h3>GANGTOK DARJEELING HONEYMOON <br>TOUR 2025</h3>
+                <p>(Gangtok 3N – Darjeeling 2N)</p>
+                <span class="days">05 NIGHTS/06 DAYS</span>
+
+                <!-- Single container for icons + button -->
+                <div class="card-bottom">
+                    <div class="tour-icons">
+                        <i class="fa-solid fa-car"></i>
+                        <i class="fa-solid fa-hotel"></i>
+                        <i class="fa-solid fa-utensils"></i>
+                        <i class="fa-solid fa-camera"></i>
+                    </div>
+                    <button class="view-detail">VIEW DETAIL</button>
+                </div>
+            </div>
+
+
+
+            <!-- Card 3 -->
+            <div class="card">
+                <div class="price-tag">17500</div>
+                <img src="https://img.freepik.com/free-photo/ulsan-bawi-rock-seoraksan-mountains-winter-south-korea_335224-287.jpg?t=st=1756477013~exp=1756480613~hmac=fd937e8ac2cefebec7d6034230682e87f75d9ce88a768507829b2e71c12400dc&w=2000"
+                    alt="Majestic Gangtok Tour">
+                <h3>MAJESTIC GANGTOK TOUR <br>PACKAGE</h3>
+                <p>(Gangtok 3N)</p>
+                <span class="days">03 NIGHTS/04 DAYS</span>
+                <!-- Single container for icons + button -->
+                <div class="card-bottom">
+                    <div class="tour-icons">
+                        <i class="fa-solid fa-car"></i>
+                        <i class="fa-solid fa-hotel"></i>
+                        <i class="fa-solid fa-utensils"></i>
+                        <i class="fa-solid fa-camera"></i>
+                    </div>
+                    <button class="view-detail">VIEW DETAIL</button>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="card">
+                <div class="price-tag">16000</div>
+                <img src="https://img.freepik.com/premium-photo/village-mountains-with-mountain-background_709698-501.jpg?w=2000"
+                    alt="Darjeeling Tour">
+                <h3>DARJEELING EXPLORER TOUR</h3>
+                <p>(Darjeeling 3N)</p>
+                <span class="days">03 NIGHTS/04 DAYS</span>
+                <!-- Single container for icons + button -->
+                <div class="card-bottom">
+                    <div class="tour-icons">
+                        <i class="fa-solid fa-car"></i>
+                        <i class="fa-solid fa-hotel"></i>
+                        <i class="fa-solid fa-utensils"></i>
+                        <i class="fa-solid fa-camera"></i>
+                    </div>
+                    <button class="view-detail">VIEW DETAIL</button>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="card">
+                <div class="price-tag">20000</div>
+                <img src="https://img.freepik.com/free-photo/beautiful-girl-making-drip-coffee-sunrise-viewpoint-pha-hi-village-chiang-rai-province-thailand_335224-1165.jpg?t=st=1756478121~exp=1756481721~hmac=a6bf00c18820dcc52d90b5acb37cc43a6b4c7a56c2bdf40ca6d6b1fe0e5b94a2&w=2000"
+                    alt="North Sikkim Tour">
+                <h3>Gangtok Darjeeling Tour Package</h3>
+                <p>(Lachen 2N – Lachung 2N)</p>
+                <span class="days">04 NIGHTS/05 DAYS</span>
+                <!-- Single container for icons + button -->
+                <div class="card-bottom">
+                    <div class="tour-icons">
+                        <i class="fa-solid fa-car"></i>
+                        <i class="fa-solid fa-hotel"></i>
+                        <i class="fa-solid fa-utensils"></i>
+                        <i class="fa-solid fa-camera"></i>
+                    </div>
+                    <button class="view-detail">VIEW DETAIL</button>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="card">
+                <div class="price-tag">18500</div>
+                <img src="https://img.freepik.com/premium-photo/house-with-mountain-background_709698-625.jpg?w=2000"
+                    alt="Pelling Tour">
+                <h3>Gangtok Pelling Darjeeling Honeymoon</h3>
+                <p>(Pelling 3N)</p>
+                <span class="days">03 NIGHTS/04 DAYS</span>
+                <!-- Single container for icons + button -->
+                <div class="card-bottom">
+                    <div class="tour-icons">
+                        <i class="fa-solid fa-car"></i>
+                        <i class="fa-solid fa-hotel"></i>
+                        <i class="fa-solid fa-utensils"></i>
+                        <i class="fa-solid fa-camera"></i>
+                    </div>
+                    <button class="view-detail">VIEW DETAIL</button>
+                </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="card">
+                <div class="price-tag">18000</div>
+                <img src="https://img.freepik.com/premium-photo/smiling-woman-looking-away-while-standing-against-mountain_1048944-26741794.jpg?w=1480"
+                    alt="Gangtok Tour">
+                <h3>Gangtok and Lachung <br>Magical Trip</h3>
+                <p>(Gangtok 2N – Lachen 1N)</p>
+                <span class="days">03 NIGHTS/04 DAYS</span>
+                <!-- Single container for icons + button -->
+                <div class="card-bottom">
+                    <div class="tour-icons">
+                        <i class="fa-solid fa-car"></i>
+                        <i class="fa-solid fa-hotel"></i>
+                        <i class="fa-solid fa-utensils"></i>
+                        <i class="fa-solid fa-camera"></i>
+                    </div>
+                    <button class="view-detail">VIEW DETAIL</button>
+                </div>
+
+            </div>
+
+            <!-- Card 8 -->
+            <div class="card">
+                <div class="price-tag">17000</div>
+                <img src="https://img.freepik.com/premium-photo/people-skiing-snow-covered-field-by-alps-against-clear-sky_1048944-22596243.jpg?w=1480"
+                    alt="Gangtok Darjeeling Tour">
+                <h3>Exotic Sikkim Tour Packages for a Mesmerising Holiday</h3>
+                <p>(Gangtok 3N – Darjeeling 2N)</p>
+                <span class="days">05 NIGHTS/06 DAYS</span>
+                <!-- Single container for icons + button -->
+                <div class="card-bottom">
+                    <div class="tour-icons">
+                        <i class="fa-solid fa-car"></i>
+                        <i class="fa-solid fa-hotel"></i>
+                        <i class="fa-solid fa-utensils"></i>
+                        <i class="fa-solid fa-camera"></i>
+                    </div>
+                    <button class="view-detail">VIEW DETAIL</button>
+                </div>
+            </div>
+
+            <!-- Card 9 -->
+            <div class="card">
+                <div class="price-tag">17500</div>
+                <img src="https://img.freepik.com/premium-photo/full-length-portrait-woman-standing-by-railing-mountain-against-sky-sunny-day_1048944-29831649.jpg?w=1480"
+                    alt="Majestic Gangtok Tour">
+                <h3>Gangtok Lachen Lachung Honeymoon <br>packages</h3>
+                <p>(Gangtok 3N)</p>
+                <span class="days">03 NIGHTS/04 DAYS</span>
+                <!-- Single container for icons + button -->
+                <div class="card-bottom">
+                    <div class="tour-icons">
+                        <i class="fa-solid fa-car"></i>
+                        <i class="fa-solid fa-hotel"></i>
+                        <i class="fa-solid fa-utensils"></i>
+                        <i class="fa-solid fa-camera"></i>
+                    </div>
+                    <button class="view-detail">VIEW DETAIL</button>
+                </div>
+            </div>
+            <!-- Card 10 -->
+            <div class="card">
+                <div class="price-tag">16000</div>
+                <img src="https://img.freepik.com/free-photo/female-rider-horseback_1398-1022.jpg?t=st=1756482064~exp=1756485664~hmac=b53356c332db23fd22c2cca13ad90c5eb92f8a0f22f864bacf23ea1d494462a4&w=2000"
+                    alt="Darjeeling Tour">
+                <h3>3 Night Gangtok Darjeeling Honeymoon Package</h3>
+                <p>(Darjeeling 3N)</p>
+                <span class="days">03 NIGHTS/04 DAYS</span>
+                <!-- Single container for icons + button -->
+                <div class="card-bottom">
+                    <div class="tour-icons">
+                        <i class="fa-solid fa-car"></i>
+                        <i class="fa-solid fa-hotel"></i>
+                        <i class="fa-solid fa-utensils"></i>
+                        <i class="fa-solid fa-camera"></i>
+                    </div>
+                    <button class="view-detail">VIEW DETAIL</button>
+                </div>
+            </div>
+
+            <!-- Card 11 -->
+            <div class="card">
+                <div class="price-tag">20000</div>
+                <img src="https://img.freepik.com/free-photo/red-train-french-alpine-mountain-winter_268835-1134.jpg?t=st=1756482126~exp=1756485726~hmac=4dc0a3303f2973fcd8343749f84799e24f70fc1d5c13fcf0a51c53b9c2ca1676&w=2000"
+                    alt="North Sikkim Tour">
+                <h3>5 Night 6 Days Exotic Sikkim Darjeeling Family Tour</h3>
+                <p>(Lachen 2N – Lachung 2N)</p>
+                <span class="days">04 NIGHTS/05 DAYS</span>
+                <!-- Single container for icons + button -->
+                <div class="card-bottom">
+                    <div class="tour-icons">
+                        <i class="fa-solid fa-car"></i>
+                        <i class="fa-solid fa-hotel"></i>
+                        <i class="fa-solid fa-utensils"></i>
+                        <i class="fa-solid fa-camera"></i>
+                    </div>
+                    <button class="view-detail">VIEW DETAIL</button>
+                </div>
+            </div>
+
+            <!-- Card 12 -->
+            <div class="card">
+                <div class="price-tag">18500</div>
+                <img src="https://img.freepik.com/premium-photo/red-swiss-train-moving-mountain-landscape_236845-7042.jpg?w=1480"
+                    alt="Pelling Tour">
+                <h3>5 Nights 6 Days Splendid Sikkim Trip</h3>
+                <p>(Pelling 3N)</p>
+                <span class="days">03 NIGHTS/04 DAYS</span>
+                <!-- Single container for icons + button -->
+                <div class="card-bottom">
+                    <div class="tour-icons">
+                        <i class="fa-solid fa-car"></i>
+                        <i class="fa-solid fa-hotel"></i>
+                        <i class="fa-solid fa-utensils"></i>
+                        <i class="fa-solid fa-camera"></i>
+                    </div>
+                    <button class="view-detail">VIEW DETAIL</button>
+                </div>
+            </div>
+            <!-- Card 13 -->
+            <div class="card">
+                <div class="price-tag">18000</div>
+                <img src="https://img.freepik.com/premium-photo/happy-paraglider_1048944-1183817.jpg?w=2000"
+                    alt="Gangtok Tour">
+                <h3>A Nature’s Paradise Gangtok Lachung Pelling Honeymoon Tour Package</h3>
+                <p>(Gangtok 2N – Lachen 1N)</p>
+                <span class="days">03 NIGHTS/04 DAYS</span>
+                <!-- Single container for icons + button -->
+                <div class="card-bottom">
+                    <div class="tour-icons">
+                        <i class="fa-solid fa-car"></i>
+                        <i class="fa-solid fa-hotel"></i>
+                        <i class="fa-solid fa-utensils"></i>
+                        <i class="fa-solid fa-camera"></i>
+                    </div>
+                    <button class="view-detail">VIEW DETAIL</button>
+                </div>
+            </div>
+
+            <!-- Card 14 -->
+            <div class="card">
+                <div class="price-tag">17000</div>
+                <img src="https://img.freepik.com/premium-photo/overhead-cable-car-snowcapped-mountains-against-clear-sky_1048944-4518469.jpg?w=2000"
+                    alt="Gangtok Darjeeling Tour">
+                <h3>Gangtok Lachen Lachung Honeymoon Packages from Bangalore</h3>
+                <p>(Gangtok 3N – Darjeeling 2N)</p>
+                <span class="days">05 NIGHTS/06 DAYS</span>
+                <!-- Single container for icons + button -->
+                <div class="card-bottom">
+                    <div class="tour-icons">
+                        <i class="fa-solid fa-car"></i>
+                        <i class="fa-solid fa-hotel"></i>
+                        <i class="fa-solid fa-utensils"></i>
+                        <i class="fa-solid fa-camera"></i>
+                    </div>
+                    <button class="view-detail">VIEW DETAIL</button>
+                </div>
+            </div>
+
+            <!-- Card 15 -->
+            <div class="card">
+                <div class="price-tag">17500</div>
+                <img src="https://img.freepik.com/free-photo/mexico-landscape-with-people-doing-tricks_23-2149862567.jpg?t=st=1756482411~exp=1756486011~hmac=3f5ffc94ad4a6714db6092267eb69f28e8be5b7ed0cc4a54f0897020dc11689d&w=2000"
+                    alt="Majestic Gangtok Tour">
+                <h3>Super Saver North Sikkim Tour Package</h3>
+                <p>(Gangtok 3N)</p>
+                <span class="days">03 NIGHTS/04 DAYS</span>
+                <!-- Single container for icons + button -->
+                <div class="card-bottom">
+                    <div class="tour-icons">
+                        <i class="fa-solid fa-car"></i>
+                        <i class="fa-solid fa-hotel"></i>
+                        <i class="fa-solid fa-utensils"></i>
+                        <i class="fa-solid fa-camera"></i>
+                    </div>
+                    <button class="view-detail">VIEW DETAIL</button>
+                </div>
+            </div>
+            <!-- Card 16 -->
+            <!-- <div class="card">
+                <div class="price-tag">16000</div>
+                <img src="https://img.freepik.com/premium-photo/village-mountains-with-mountain-background_709698-501.jpg?w=2000"
+                    alt="Darjeeling Tour">
+                <h3>DARJEELING EXPLORER TOUR</h3>
+                <p>(Darjeeling 3N)</p>
+                <span class="days">03 NIGHTS/04 DAYS</span>
+                <button class="view-detail">VIEW DETAIL</button>
+            </div> -->
+
+            <!-- Card 17
+            <div class="card">
+                <div class="price-tag">20000</div>
+                <img src="https://img.freepik.com/free-photo/beautiful-girl-making-drip-coffee-sunrise-viewpoint-pha-hi-village-chiang-rai-province-thailand_335224-1165.jpg?t=st=1756478121~exp=1756481721~hmac=a6bf00c18820dcc52d90b5acb37cc43a6b4c7a56c2bdf40ca6d6b1fe0e5b94a2&w=2000"
+                    alt="North Sikkim Tour">
+                <h3>NORTH SIKKIM ADVENTURE TOUR</h3>
+                <p>(Lachen 2N – Lachung 2N)</p>
+                <span class="days">04 NIGHTS/05 DAYS</span>
+                <button class="view-detail">VIEW DETAIL</button>
+            </div>
+
+            Card 18 -->
+            <!-- <div class="card">
+                <div class="price-tag">18500</div>
+                <img src="https://img.freepik.com/premium-photo/house-with-mountain-background_709698-625.jpg?w=2000" alt="Pelling Tour">
+                <h3>PELLING RELAX TOUR PACKAGE</h3>
+                <p>(Pelling 3N)</p>
+                <span class="days">03 NIGHTS/04 DAYS</span>
+                <button class="view-detail">VIEW DETAIL</button>
+            </div> -->
+        </div>
+    </section>
+    <!-- ABOUT SECTION -->
+    <section class="about">
+        <div class="about-text">
+            <h4>KNOW MORE ABOUT</h4>
+            <h2>SIKKIM <span>DARJEELING TAXI</span></h2>
+            <p>
+                Our car rental service is a premium taxi service provider in the region.
+                We are the No.1 Sikkim Car rental from Bagdogra with the most affordable service
+                for Darjeeling, Gangtok, Lachen, Lachung, Bhutan, Shillong.
+            </p>
+            <p>
+                Sikkimdarjeelingtaxi.com – We provide complete car rental service throughout
+                Sikkim and Darjeeling. We offer reliable and affordable car rental service from
+                Siliguri to Sikkim Darjeeling district and other North East Sates. Our cars are very
+                well maintained in terms of service and conditions. These cars are driven by
+                professional drivers who have a vast amount of experience in driving vehicles
+                throughout hilly terrain roads.
+            </p>
+            <button class="btn-view">VIEW MORE</button>
+        </div>
+        <div class="about-video">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/SIScGjOvGpw?si=Co3yGuyEp5Fr0V43"
+                frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- TESTIMONIAL SLIDER -->
+    <section class="testimonial">
+        <div class="slider">
+            <button class="prev">&#10094;</button>
+
+            <!-- Slide 1 -->
+            <div class="slide active">
+                <div class="testimonial-content">
+                    <div class="user-icon">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User 1"
+                            style="width:60px; height:60px; border-radius:50%;">
+                    </div>
+                    <h4>Rahul Sharma</h4>
+                    <img src="assets/vecteezy_5-star-rating.png" alt="5 Stars" style="width:100px;">
+                    <p>
+                        We opted for a 3-day Gangtok trip. It was really great and memorable.
+                        Kudos to him as he arranged the trip very conveniently.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="slide">
+                <div class="testimonial-content">
+                    <div class="user-icon">
+                        <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="User 2"
+                            style="width:60px; height:60px; border-radius:50%;">
+                    </div>
+                    <h4>Priya Verma</h4>
+                    <img src="assets/vecteezy_5-star-rating.png" alt="5 Stars" style="width:100px;">
+                    <p>
+                        Everything was well-organized and super comfortable. The hotel and taxi
+                        arrangements were excellent. Highly recommended for hassle-free travel!
+                    </p>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="slide">
+                <div class="testimonial-content">
+                    <div class="user-icon">
+                        <img src="https://randomuser.me/api/portraits/men/85.jpg" alt="User 3"
+                            style="width:60px; height:60px; border-radius:50%;">
+                    </div>
+                    <h4>Aditya Mehta</h4>
+                    <img src="assets/vecteezy_5-star-rating.png" alt="5 Stars" style="width:100px;">
+                    <p>
+                        Great experience! The trip was perfectly planned and we enjoyed every bit
+                        of it. The support team was responsive and friendly throughout.
+                    </p>
+                </div>
+            </div>
+
+            <button class="next">&#10095;</button>
+        </div>
+    </section>
+
+
+    <!-- FLOATING BUTTONS -->
+    <div class="floating-btn whatsapp">
+        <a href="tel:+919002069916">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/512px-WhatsApp.svg.png"
+                alt="WhatsApp">
+        </a>
+    </div>
+
+    <div class="floating-btn call">
+        <a href="tel:+919002069916">
+            <img src="https://images.vexels.com/media/users/3/137415/isolated/preview/0e475bb9b17b3fa4f94f31fba1635b8f-telephone-call-icon-logo.png?w=360"
+                alt="Call">
+        </a>
+    </div>
+
+
+
+    <section class="call-section">
+        <p class="subtitle">We provides Online Cab booking and Luxury cab on rent</p>
+        <h2>WE ARE JUST A CALL AWAY</h2>
+        <p class="phone">
+          <a href="tel:+919002069916">+91-90020-69916</a> | 
+          <a href="tel:+9832564013">+91-98325-64013</a>
+        </p>
+      
+        <h3 class="recognition-title">Our Recognition</h3>
+        <div class="recognition-logos">
+          <img src="https://www.sikkimdarjeelingtaxi.com/images/logos.png" alt="Logo 1">
+          <!-- <img src="logo2.png" alt="Logo 2">
+          <img src="logo3.png" alt="Logo 3">
+          <img src="logo4.png" alt="Logo 4">
+          <img src="logo5.png" alt="Logo 5">
+          <img src="logo6.png" alt="Logo 6"> -->
+        </div>
+      
+        <p class="unit-text">A Unit of Yes Tourism</p>
+      </section>
+      
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <!-- Contact Info -->
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Upper Sichey, Gangtok East, Sikkim <br>
+                    We operate 24/7 for airport transfers, local tours and long-distance travel.<br> For urgent bookings call the numbers above</p>
+                    <!-- . -->
+                <p><i class="fas fa-phone"></i> +91-98325-64013 | +91-90020-69916</p>
+                <p><i class="fas fa-envelope"></i>sikkimtaxis@gmail.com</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fas fa-share-alt"></i></a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <p><a href="#">Home</a></p>
+                <p><a href="#">FAQ</a></p>
+                <p><a href="#">About Us</a></p>
+                <p><a href="#">Contact Us</a></p>
+                <p><a href="#">Privacy Policy</a></p>
+            </div>
+
+            <!-- Destination -->
+            <div class="footer-section">
+                <h3>Destination</h3>
+                <p><a href="#">Sikkim-Darjeeling</a></p>
+            </div>
+
+            <!-- Vehicle Images -->
+            <div class="footer-section footer-images">
+                <img src="https://www.sikkimdarjeelingtaxi.com/ServerImage/innova3.jpeg" alt="Car 1">
+                <img src="https://www.sikkimdarjeelingtaxi.com/ServerImage/wagon%20R.jpg" alt="Car 2">
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            &copy; Sikkim Darjeeling Taxi 2024 - 2025
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
